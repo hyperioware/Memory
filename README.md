@@ -10,3 +10,4 @@ Just took an easy classic game to start working on -- I've always been curious a
 5. Amount of XP after each round is determined by the percentage of turns unused based on the level and then multiplied by
 the level's multiplier.
 6. 2 bonuses available at the moment.
+7. Card placement on the board is split in half. Every card has its match on the opposite half of the board. I suppose eventually I'll write it so that it's randomized across the entire board for 100% mix

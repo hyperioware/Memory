@@ -39,7 +39,6 @@ function checkCard(el){
 					card2 = null;
 					count += 2;
 					if(count == 20){
-						alert("You win!");
 						$('.matched .cover').show();
 						$('.matched .num').hide();
 						$('.tile').removeClass('matched');

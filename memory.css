@@ -1,0 +1,70 @@
+/* CSS Document */
+#wrapper{
+	height: 625px;
+	width: 550px;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	border: 5px black solid;
+}
+.tile{
+	position:relative;
+	float:left;
+	display:inline-table;
+	height:100px;
+	width:100px;
+	text-align:center;
+	line-height: 100px;
+	border: 5px black solid;
+	cursor: pointer;
+}
+.cover{
+	position:relative;
+	float:left;
+	display:inline-table;
+	height:100px;
+	width:100px;
+	text-align:center;
+	line-height: 100px;
+	background: #F2F2F2 url(cover.png) no-repeat;
+}
+.num{
+	position:relative;
+	float:left;
+	height:100px;
+	width:100px;
+	text-align:center;
+	line-height: 100px;
+	display: none;
+	font-size: 32px;
+}
+
+#header img{
+	padding-left: 100px;
+}
+
+#scoreboard{
+	height: 85px;
+	width: 550px;
+}
+#moves{
+	position: relative;
+	float:left;
+	display:block;
+	width: 550px;
+	height: 30px;
+}
+#level{
+	position: relative;
+	float:left;
+	display:block;
+	width: 550px;
+	height: 30px;
+}
+#xp{
+	position: relative;
+	float:left;
+	display:block;
+	width: 550px;
+	height: 25px;
+}

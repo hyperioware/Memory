@@ -41,6 +41,9 @@ foreach($numbers2 as $num){
 <body>
 <div id='wrapper'>
 	<div id='header'><img src='../img/memory.png' height='100' alt='Memory'></div>
+	<!-- These are the notification divs -->
+	<div class="hiddenNotification" id="notification1">First move match bonus!</div>
+	<div class="hiddenNotification" id="notification2">Matched 3 in a row!</div>
 	<div id='board'>
 		<?php echo $board; ?>
     </div>

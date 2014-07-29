@@ -9,6 +9,17 @@ var max_moves = lvl_1;
 var level = 1;
 var xp = 0;
 var three_in_a_row = 0;
+
+function notify(target) {
+	//simple function that will toggle the notifications
+    $('#' + target).addClass('visibleNotification');
+    $('#' + target).removeClass('hiddenNotification');
+    setTimeout(function() {
+      $('#' + target).addClass('hiddenNotification');
+      $('#' + target).removeClass('visibleNotification');
+    },1500); //set the timeout equal to your desired animation length
+}
+
 function checkCard(el){
 	if($(el).hasClass('matched')){
 	}else{
@@ -22,14 +33,14 @@ function checkCard(el){
 			setTimeout(function(){
 				if($(card1).attr('class') == $(card2).attr('class')){
 					if(three_in_a_row == 3){
-						alert("Matched 3 in a row!");
+						notify('notification2'); //Three in a row notification
 						giveBonus("three_in_a_row");
 						three_in_a_row = 0;
 					}else{
 						three_in_a_row++;
 					}
 					if(moves == 1){
-						alert("First move match bonus!");
+						notify('notification1'); //First move match notification
 						giveBonus("first_move_match");
 					}
 					$('.tile').removeClass('selected');

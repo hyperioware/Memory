@@ -68,3 +68,50 @@
 	width: 550px;
 	height: 25px;
 }
+
+/*notification section*/
+.hiddenNotification {
+  display: none;
+}
+
+.visibleNotification {
+  z-index: 99;
+  color: #f00;
+  font-size: 24px;
+  font-weight: bold;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  text-align: center;
+  margin-left: -250px;
+  /*add in extra browser support*/
+  -webkit-animation: notify 1.5s ease-in;
+  animation: notify 1.5s ease-in;
+}
+
+/*more browser support needed*/
+@-webkit-keyframes notify {
+  from {
+    opacity: 1;
+    font-size: 24px;
+    top:50%;
+  }
+  to {
+    opacity: 0;
+    font-size: 48px;
+    top:25%;
+  }
+}
+
+@keyframes notify {
+  from {
+    opacity: 1;
+    font-size: 24px;
+  }
+  to {
+    opacity: 0;
+    font-size: 48px;
+  }
+}

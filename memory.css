@@ -1,11 +1,24 @@
 /* CSS Document */
 #wrapper{
+	position: absolute;
+	top: 0;
+	
 	height: 625px;
-	width: 550px;
+	width: 700px;
 	margin: 0 auto;
 	padding: 0 0 0 0;
 	font-family: Tahoma, Geneva, sans-serif;
 	border: 5px black solid;
+}
+#board{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	height: 440px;
+	width: 550px;
+	font-family: Tahoma, Geneva, sans-serif;
+	border: 5px black solid;
+	z-index:98;
 }
 .tile{
 	position:relative;
@@ -44,27 +57,94 @@
 }
 
 #scoreboard{
-	height: 85px;
-	width: 550px;
+	position: absolute;
+	top: 0;
+	left: 555px;
+	height: 625px;
+	width: 140px;
+	border-left: 5px black solid;
+	background: black url(screenshot.png) 0 285px no-repeat;
+	color: white;
 }
 #moves{
 	position: relative;
 	float:left;
 	display:block;
-	width: 550px;
-	height: 30px;
+	width: 140px;
+	height: 100px;
+	background: #CCC;
+	color: black;
+}
+#moves-title{
+	position: relative;
+	float:left;
+	display:block;
+	width: 140px;
+	height: 25px;
+	text-align:center;
+	line-height: 25px;
+	font-size: 24px;
+}
+#moves-count{
+	position: relative;
+	float:left;
+	display:block;
+	width: 140px;
+	height: 75px;
+	text-align:center;
+	line-height: 75px;
+	font-size: 54px;
 }
 #level{
 	position: relative;
 	float:left;
 	display:block;
-	width: 550px;
-	height: 30px;
+	width: 140px;
+	height: 145px;
+	background: url(level.png) -10px -10px no-repeat;
+	color: white;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#level-title{
+	position:relative;
+	display:inline;
+	float:left;
+	height:40px;
+	width: 140px;
+	text-align:center;
+	line-height: 40px;
+	font-size: 24px;
+}
+#level-count{
+	position:relative;
+	display:inline;
+	float:left;
+	height:100px;
+	width: 140px;
+	text-align:center;
+	line-height:100px;
+	font-size:84px;
 }
 #xp{
 	position: relative;
 	float:left;
 	display:block;
-	width: 550px;
-	height: 25px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: green;
+	text-align:center;
+}
+
+.game-message{
+	position: absolute;
+	top: 555px;
+	left: 13px;
+	height: 75px;
+	width: 555px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align:center;
+}
+.game-message-img{
+	display:none;
 }

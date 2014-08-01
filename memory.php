@@ -44,7 +44,8 @@ foreach($numbers2 as $num){
 	<div id='board'>
 		<?php echo $board; ?>
     </div>
-    <div id='scoreboard'><span id='moves'>Number of moves: 0</span><span id='level'>Level 1</span><span id='xp'>XP: 0</span></div>
+    <div id='scoreboard'><span id='level'><span id='level-title'>Level</span><span id='level-count'>1</span></span><span id='xp'>0/500 xp</span><span id='moves'><span id='moves-title'>Moves</span><span id='moves-count'>0</span></span></div>
 </div>
+<div class='game-message'></div>
 </body>
 </html>

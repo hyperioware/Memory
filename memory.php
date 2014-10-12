@@ -64,7 +64,7 @@ foreach($tiles as $num){
 <div class='game-message'></div>
 <audio id='card-flip'><source src='aud/flip.mp3' type='audio/mpeg'></audio>
 <audio id='card-match'><source src='aud/match.wav' type='audio/wav'></audio>
-<audio id='level-up'><source src='aud/level_up.mp3' type='audio/wav'></audio>
+<audio id='level-up'><source src='aud/level_up.mp3' type='audio/mpeg'></audio>
 <audio id='three-in-a-row'><source src='aud/three_in_a_row.mp3' type='audio/wav'></audio>
 </body>
 </html>
